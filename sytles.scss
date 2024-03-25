@@ -1,0 +1,152 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(238, 230, 217); 
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    padding: 100px 0 0 ;
+    margin: 0 40px 240px 30px;
+}
+.grid-item{
+    &__book{  
+     transform: rotate(270deg);
+     left: 50%;
+     color: navy;
+     font-size: 30px;
+     align-content: center;
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+    }
+    &__list{  
+        border-right: 2px solid navy;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 400px;
+        overflow: scroll;
+        gap: 15px;
+        padding-left: 10px;
+       }
+    &__information{  
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border: none;
+       }
+}
+.book{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-bottom: 2px solid navy;
+    text-align: left;
+    width: 420px;
+    row-gap: 10px;
+
+}
+.book-img{
+        grid-column: 1;
+        grid-row: span 6;
+        align-items: left;
+        justify-content: left;
+    }
+
+.book-title{
+        grid-column: 2;
+        grid-row: 1;
+        color: navy;
+        text-align: left;
+        justify-content: left;
+        font-size: 15px;
+       
+    }
+.book-author{
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 10px;
+        text-align: left;
+        justify-content: left;
+        
+    }
+.book-stock{
+    grid-column: 2;
+    grid-row: 3;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    text-align: left;
+    justify-content: left;
+    background-color:green ;
+
+}
+.book-price{
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 15px;
+    color: navy;
+    font-weight: 950;
+    text-align: left;
+    justify-content: left;
+}
+.book-delete{
+    grid-column: 3;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#title,#author,#image-url,#price{
+    background-color:rgb(238, 230, 217); 
+    border: none; 
+    border-bottom: 2px solid navy;
+    padding:25px 0 0 ;
+    width: 250px;
+}
+
+#stock{
+    border: none;
+    background-color:rgb(238, 230, 217); 
+    border-bottom: 2px solid navy;
+    padding:25px 0 0;
+    width: 250px;
+    border-bottom: 2px solid navy;
+    // background-color: green;
+}
+.button{
+    margin: 20px 0 0;
+    color: white;
+    background-color: navy;
+    border-radius: 20px;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    
+}
+.grid-item__list{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.message{
+    display:grid;
+    grid-template-columns: 1fr;
+    color: green;
+    padding: 5px 0 0 ;
+    font-size: small;
+}
+h1{
+    color: red;
+    font-size: small;
+    
+}

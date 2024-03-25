@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory-Web-Application-Project</title>
+    <link rel="stylesheet" href="sytles.css">
+    <script src="https://kit.fontawesome.com/26a7c3dded.js" crossorigin="anonymous"></script>
+</head>
+<body onload="load()">
+    
+    <div class="grid">
+        <div class="grid-item__book">Booktory</div>
+        
+        <div class="grid-item__list" id="grid-item__list"></div>
+<div class="grid-item__information">
+    <form>
+        <input type="title" id="title" placeholder="Title"><br>
+        <input type="author" id="author" placeholder="Author"><br>
+        <input type="image-url" id="image-url" placeholder="Image URL"><br>
+        <input type="price" id="price" placeholder="Price"><br>
+        
+        <select id="stock"><br>
+            <option value="in-stock">in Stock</option>
+            <option value="out-of-stock">Out Of Stock</option>
+        </select>
+        <input class="button" type="button" value="Add Book" onclick="addBook()">
+        <div class="message", id="message"></div>
+    </form>
+</div>
+</div>
+
+<script defer src="main.js"></script>
+</body>
+</html>
+
+
