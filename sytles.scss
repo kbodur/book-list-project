@@ -47,11 +47,19 @@ body{
 
 }
 .book-img{
-        grid-column: 1;
-        grid-row: span 6;
-        align-items: left;
-        justify-content: left;
-    }
+    grid-column: 1;
+    grid-row: span 6;
+    align-items: left;
+    justify-content: left;
+    display: flex; 
+}
+        
+.book-img img {
+    width: 70px; 
+    display: flex; 
+}
+        
+    
 
 .book-title{
         grid-column: 2;
@@ -131,6 +139,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    list-style: none;
 
     
 }
